@@ -1,12 +1,15 @@
+import Link from 'next/link'
+import Image from 'next/image'
+
 const Navbar = () => {
     return (
         <nav>
             <div className="logo">
-                <h1>Contact List</h1>
+                <Image src="/contact.png" width={128} height={77}/>
             </div>
-            <a>Home</a>
-            <a>About</a>
-            <a>Contact Listing</a>
+            <Link href="/"><a>Home</a></Link>
+            <Link href="/about"><a>About</a></Link>
+            <Link href="/contacts"><a>Contacts</a></Link>
         </nav>
     );
 }   
